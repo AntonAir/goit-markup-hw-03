@@ -23,9 +23,22 @@ body{
 h1, h2, h3, h4, h5, h6, p{
     margin: 0px;
 }
+ul, ol{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto; 
+    
+    background-color: rgb(201, 152, 152);
+}
 
 .list{
-    list-style: none;
+    list-style: none;;
 }
 
 .link{
@@ -34,14 +47,26 @@ h1, h2, h3, h4, h5, h6, p{
 
 
 
-                    /* header */
+                                        /* header */
 
+.main-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.header-nav.main{
+    
+
+}
 /* лого */
 .logo{
     font-family: Raleway, sans-serif ;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
+    margin-right: 93px ;
 }
 
 .logo-blue{
@@ -53,9 +78,21 @@ h1, h2, h3, h4, h5, h6, p{
 
 /* навигация */
 
-.header-list{
-
+.header-nav.main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+
+.header-list{
+    display: flex;
+}
+
+
+.header-list .item:not(:last-child){
+    margin-right: 50px;
+}
+
 
 .header-item {
     font-weight: 500;
@@ -68,6 +105,16 @@ h1, h2, h3, h4, h5, h6, p{
 .header-item:hover,
 .header-item:focus {
     color: var(--accented-color);
+}
+
+/* комуникации */
+
+.header-communications{
+    display: flex;
+}
+
+.header-communications .item:not(:first-child){
+    margin-left: 50px;
 }
 
 .header-contact{
