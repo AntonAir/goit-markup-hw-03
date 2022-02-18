@@ -1,5 +1,5 @@
 :root{
-    /* палитра */
+                                        /* палитра */
 
     --text-color-main: #757575;
     --text-color-secondary: #212121;
@@ -10,7 +10,11 @@
     --logo-black: #000000;
 }
 
-/* общие элементы */
+
+
+
+
+                                        /* общие элементы */
 body{
 
     font-family: Roboto, sans-serif ; 
@@ -30,11 +34,9 @@ ul, ol{
 
 .container{
     width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 94px 15px 94px 15px;
     margin: 0 auto; 
-    
-
+    text-align: center;
 }
 
 .list{
@@ -47,18 +49,26 @@ ul, ol{
 
 
 
-                                        /* header */
+
+
+                                               /* header */
+
+.header{
+    border-bottom: 1px solid #ECECEC;
+}
 
 .main-nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
-
+/* навигация в хедере */
 .header-nav.main{
-    
-
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 /* лого */
 .logo{
@@ -72,22 +82,14 @@ ul, ol{
 .logo-blue{
     color: var(--accented-color);
 }
+
 .logo-black{
     color: var(--logo-black);
-}
-
-/* навигация */
-
-.header-nav.main{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .header-list{
     display: flex;
 }
-
 
 .header-list .item:not(:last-child){
     margin-right: 50px;
@@ -113,8 +115,8 @@ ul, ol{
     display: flex;
 }
 
-.header-communications .item{
-    background-color: tomato;
+.header-communications .item:not(:last-child){
+    margin-right: 50px;
 }
 
 .header-contact{
@@ -130,22 +132,41 @@ ul, ol{
     color: var(--accented-color);
 }
 
-                    /* main */
+
+
+
+
+
+
+
+                                                /* main */
+
 
 /* герой */
 
 .hero{
-        background-color: var(--background-color-dark);
+    background-color: var(--background-color-dark);
+    padding-top: 200px;
+    padding-bottom: 280px;
+}
+
+.container-hero{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto; 
+    text-align: center;
 }
 
 .hero-title{
+    margin-bottom: 30px;
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--background-color);
-
 }
 
 .hero-btn{
@@ -155,9 +176,16 @@ ul, ol{
     color: var(--background-color);
     background-color: var(--accented-color);
     cursor: pointer;
+    
 }
 
-/* чем мы занимаемся */
+
+
+/* Наши преимущества */
+
+.benefits .container{
+    padding-bottom: 0;
+}    
 
 .benefits{
     background-color: var(--background-color);
@@ -165,8 +193,27 @@ ul, ol{
 
 .benefits-title{
     visibility: hidden;
+    height: 0px;
 }
+
+.benefits-list{
+    display: flex;
+    
+}
+
+.benefits-item{
+    width: 270px;
+
+    text-align: left;
+}
+
+.benefits-item:not(:last-child){
+    margin-right: 30px;
+}
+
 .benefits-advantage{
+    margin-bottom: 10px;
+
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -175,16 +222,33 @@ ul, ol{
 }
 
 .benefits-text{
-    font-size: 14px;
     line-height: 1.71;
 }
 
-.benefits-work{
+/* Чем мы занимаемся */
+
+
+.work-title{
+    margin-bottom: 50px;
+
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     color: var(--text-color-secondary);
+
 }
+
+.work-list{
+    display: flex;
+}
+
+.work .item:not(:last-child){
+    margin-right: 30px;
+}
+
+
+
+
 
 /* наша команда */
 
