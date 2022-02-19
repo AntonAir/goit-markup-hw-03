@@ -381,6 +381,7 @@ ul, ol{
     margin-right: 30px;
     margin-bottom: 30px;
     padding-bottom: 20px;
+
 }
 
 .portfolio-item:nth-child(n+7){
@@ -397,9 +398,11 @@ ul, ol{
 
 .description{
     padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
 
     text-align: left;
-    padding-left: 24px;
+    
     border: 1px solid #EEEEEE;
     border-top: 0px;
 }
